@@ -1,23 +1,81 @@
 aid: bettermanager
+
 name: Bettermanager
-description: 'Bettermanager is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://global-uploads.webflow.com/5c622fe1b51ea042f603663b/5d648a816ed3ee6fde9f1e46_BetterManager-Home-2019.jpg
+
+description: BetterManager provides leadership coaching and development programs that increase collaboration, engagement, and performance across
+  your entire management team. It offers a range of programs for managers, higher education, and organizations, delivering personalized coaching,
+  workshops, and resources to help leaders grow and drive business impact.
+
 url: https://raw.githubusercontent.com/api-evangelist/bettermanager/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Leadership
+- Coaching
+- Development
+- Management
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bettermanager-hosts.yml
+- type: Vendors
+  url: vendors/bettermanager-vendors.yml
+- type: TermsOfService
+  url: https://www.bettermanager.us/terms-of-service
+- type: Login
+  url: https://www.bettermanager.us/remote-teams-hq/login
+- type: Leadership
+  url: https://www.bettermanager.us/category/leadership
+- type: Documentation
+  url: https://www.bettermanager.us/training/docs
+- type: DomainSecurity
+  url: security/bettermanager-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bettermanager
+  url: https://www.bettermanager.us
+- type: Blog
+  url: https://www.bettermanager.us/blog
+- type: PrivacyPolicy
+  url: https://www.bettermanager.us/privacy-policy
+
+apis:
+- name: Bettermanager API
+  description: API documentation for Bettermanager
+  humanURL: https://www.bettermanager.us/training/docs
+  baseURL: null
+  aid: bettermanager:bettermanager-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via JavaScript and no OpenAPI spec is discoverable.
+  evidence:
+  - url: https://www.bettermanager.us/training/docs
+    status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,11 @@
+generated: '2026-09-28'
+method: searched
+source: https://www.bettermanager.us/privacy-policy
+signals:
+  data_retention:
+    url: https://www.bettermanager.us/privacy-policy
+    http_status: 200
+    fetched: true
+    note: states that the privacy policy remains in effect indefinitely, implying no specific retention period.
+    evidence:
+      - quote: "This Policy will remain in full force and effect, even if your access to, use of and/or participation in connection with the Products and Service or any other particular service, feature, function, promotion or activity offered on or through the Service terminates, expires, is suspended or deactivated for any reason."
